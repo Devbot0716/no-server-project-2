@@ -1,0 +1,51 @@
+<div class="home">
+
+  <div class="nav_bar">
+
+<br>
+   <div class="welcome">
+    Welcome to random recipe generator!
+   </div>
+<br>
+  <button class="random_button" ng-click='getRandomRecipe()' type="button">Generate random recipe!</button>
+  <br>
+<hr>
+  <br>
+<!-- random recipe -->
+  <div class="recipeCard">
+
+  <img class='food_pic' ng-src="{{recipe.image_url}}" alt="{{recipe.title}}">
+<br>
+  <h1>{{recipe.title}}</h1>
+  <h4>{{recipe.publisher}}
+    <h6><a class='source_site' target="_blank" href="{{recipe.source_url}}">Go to {{recipe.publisher}}'s site!</a></h6>
+  </h4>
+<br>
+  <p>{{recipe.ingredients}}</p>
+  </div>
+</div>
+
+<!--search results-->
+<div class="search_results">
+
+<div ng-repeat='result in searchResults'>
+  <a ng-click='selectRecipe(result)' ui-sref='recipe({id: result.recipeId})'>{{result.title}}</a>
+</div>
+
+<div ng-show='result' class="recipeCard">
+  <div>
+    <img class='food_pic' ng-src="{{recipe.image_url}}" alt="{{recipe.title}}">
+    <div class='recipe_text'>
+      <h1>{{recipe.title}}</h1>
+      <h4>{{recipe.publisher}}
+      <h6>{{recipe.source_url}} {{recipe.publisher_url}}</h6>
+      </h4>
+
+    <br>
+    <p>{{recipe.ingredients}}</p>
+    </div>
+  </div>
+
+</div>
+
+</div>

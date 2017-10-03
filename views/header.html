@@ -1,0 +1,18 @@
+<header>
+  <div>
+  <nav class="site-nav">
+    <ul class="primary-nav">
+
+      <li><a ui-sref='home'>Home</a></li>
+
+      <!--Search Bar-->
+        <input class='recipe_search_bar' placeholder="Search for Recipe" type="text" ng-model='searchTerm'>
+        <button ng-click='searchRecipes(searchTerm)' type="button" name="button">Search</button>
+        <br>
+
+
+      <li><a ui-sref='recipes'>List of recipes</a></li>
+    </ul>
+  </nav>
+</div>
+</header>

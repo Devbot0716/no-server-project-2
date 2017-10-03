@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+div.welcome {
+  display: flex;
+  justify-content: center;
+}
+
+button.random_button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 40px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    font-size: bold;
+}
+
+button.random_button:hover {
+  background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+img.food_pic {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width: auto;
+  height: auto;
+}
+
+a.source_site.ng-binding {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 12px;
+}
+
+a.ng-binding {
+  cursor:pointer;
+}
+
+a.ng-binding:hover {
+  color: green;
+}
+
+h1.ng-binding, h4.ng-binding, h6.ng-binding{
+  display: flex;
+  justify-content: center;
+}
+
+p.ng-binding {
+  padding-bottom: 15px;
+}
