@@ -5,7 +5,7 @@ angular.module('app')
       var randInt = ~~(Math.random() * 40000) + 10000;
       return $http ({
         method: 'GET',
-        url: `http://food2fork.com/api/get?rId=${randInt}&key=e0c76ddc318883839bde63f434e68776`
+        url: `https://food2fork.com/api/get?rId=${randInt}&key=e0c76ddc318883839bde63f434e68776`
       })
     }
 
@@ -16,14 +16,14 @@ angular.module('app')
     this.searchRecipes = function(searchTerm){
       return $http({
         method: 'GET',
-        url: `http://food2fork.com/api/search?key=e0c76ddc318883839bde63f434e68776&q=${searchTerm}`
+        url: `https://food2fork.com/api/search?key=e0c76ddc318883839bde63f434e68776&q=${searchTerm}`
       })
     }
 
     this.recipeById = function(id){
       return $http ({
         method: 'GET',
-        url: `http://food2fork.com/api/get?rId=${id}&key=e0c76ddc318883839bde63f434e68776`
+        url: `https://food2fork.com/api/get?rId=${id}&key=e0c76ddc318883839bde63f434e68776`
       })
     }
 
